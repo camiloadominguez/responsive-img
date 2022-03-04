@@ -1,0 +1,12 @@
+<img *ngIf="size=='xs'" src="assets/paisaje 1.jpg" alt="assets/paisaje 1.jpg">
+<img *ngIf="size=='sm'" src="assets/paisaje 2.jpg" alt="assets/paisaje 2.jpg">
+<img *ngIf="size=='md'" src="assets/paisaje 3.jpg" alt="assets/paisaje 3.jpg">
+<img *ngIf="size=='lg'" src="assets/paisaje 4.jpg" alt="assets/paisaje 4.jpg">
+<p *ngIf="cambio">assets/paisaje 1.jpg</p>
+<p *ngIf="!cambio">assets/paisaje 2.jpg</p>
+<p *ngIf="cambio">assets/paisaje 3.jpg</p>
+<p *ngIf="!cambio">assets/paisaje 4.jpg</p>
+<button (click)="cambio = !cambio">cambiar</button>
+<!-- <div *ngFor="let i of cosas">
+    <p>{{i}}</p>
+</div> -->
